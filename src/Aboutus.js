@@ -6,7 +6,7 @@ const Aboutus = () => {
   return (
     <>
       <section className="common-section our-services">
-        <div className="container mb-5">
+        <div className="container">
           <div className="row">
             <div className="col-12 col-lg-5 text-center our-service-leftside-img">
               <img src="./images/hero3.jpg" alt="aboutusIMg" />
@@ -47,7 +47,7 @@ const Aboutus = () => {
         <div className="container mb-5">
           <div className="row">
             {/* 1section right side data  */}
-            <div className="col-12 col-lg-7 our-services-rightside-content d-flex justify-content-center align-items-start flex-column">
+            <div className="col-12 col-lg-7 our-services-rightside-content d-flex justify-content-center align-items-start flex-column order-lg-first order-last">
               <h3 className="mini-title">-- SUPPORT IN ANY LANGUAGES</h3>
               <h1 className="main-heading">
                 World class support is <br /> available 24/7
@@ -73,7 +73,7 @@ const Aboutus = () => {
             </div>
 
             {/* images section  */}
-            <div className="col-12 col-lg-5  our-service-rightside-img">
+            <div className="col-12 col-lg-5  our-service-rightside-img order-md-first order-sm-first">
               <img src="./images/callcenter.jpg" alt="aboutusIMg" />
             </div>
           </div>

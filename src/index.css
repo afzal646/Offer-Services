@@ -41,8 +41,17 @@ h6 {
   background-color: var(--bgcolor);
   padding: 2rem 0;
   z-index: 99;
-  position: relative;
+  position: relative;  
 }
+
+
+
+.fixed-nav {
+  background-color: var(--bgcolor);
+  position: fixed;
+  width: 100%;
+}
+
 
 .navbar-brand {
   font-size: 2.5rem;
@@ -55,7 +64,7 @@ h6 {
 .navbar li a {
   font-size: 1.7rem;
   font-weight: lighter;
-  position: relative;
+  position:  relative;
 }
 
 .navbar li a:hover {
@@ -64,7 +73,7 @@ h6 {
 }
 
 .btn-style {
-  width: 12rem;
+  width: 18rem;
   height: 4rem;
   border-radius: 2rem;
   color: #fff;
@@ -168,7 +177,7 @@ header {
 }
 
 .main-herosection-images img {
-  width: 60%;
+  width: 80%;
   height: 75%;
   margin-top: 10rem;
   box-shadow: 0 0.8rem 0.8rem rgba(0, 0, 0, 0.25);
@@ -179,9 +188,9 @@ header {
 .main-herosection-images .main-hero-img2 {
   position: absolute;
   width: 50%;
-  height: 30%;
+  height: 50%;
   left: 55%;
-  top: -2%;
+  top: -10%;
   box-shadow: 0.8rem 0 0.8rem rgba(0, 0, 0, 0.25);
 }
 
@@ -200,11 +209,24 @@ header {
   border-radius: 0.5rem;
 }
 
+.work-container img {
+  padding: 2rem;
+}
+
 .work-container .main-heading {
   font-size: 3rem;
   font-weight: bolder;
   margin-bottom: 4rem;
   word-spacing: 1rem;
+}
+
+.work-container .main-h4 {  
+  font-weight: lighter; 
+  text-align: center;
+  text-justify: inter-word;  
+  margin: auto;
+  margin-bottom: 3rem;
+  width: 90%;
 }
 
 .work-container-subdiv {
@@ -245,6 +267,7 @@ header {
   border-radius: 1.5rem;
 }
 
+
 .our-services .mini-title {
   text-transform: uppercase;
   font-weight: normal;
@@ -259,6 +282,15 @@ header {
 
 .our-services-info {
   margin-top: 4rem;
+}
+
+.service-main-container .main-h4 {  
+  font-weight: lighter; 
+  text-align: center;
+  text-justify: inter-word;  
+  margin: auto;
+  margin-bottom: 3rem;
+  width: 90%;
 }
 
 .our-services .our-services-number {
@@ -392,6 +424,50 @@ header {
 /* --------------------------------- Contact US Section ends  
                         -------------------------------------------------------*/
 
+/* --------------------------------- Still thinking Section starts 
+                        -------------------------------------------------------*/
+                        .Stillthinking {
+                          height: 40vh;
+                          display: flex;
+                          /* background-color: aqua; */
+                        }
+                        
+                        .Stillthinking h1 {
+                          text-transform: capitalize;
+                          font-weight: bolder;
+                        }
+
+                        .Stillthinking h3 {
+                          
+                          font-weight: lighter;
+                        }
+                        
+                        .Stillthinking-para {
+                          font-size: 1.5rem;
+                          color: var(--text-color);
+                          margin: 1rem 0 5rem 0;
+                          font-weight: lighter;
+                          width: 80%;
+                        }
+
+                        .Stillthinking .btn-style {
+                          width: 12rem;
+                          height: 4rem;
+                          border-radius: 2rem;
+                          color: #fff;
+                          background-color: var(--primary-color);                          
+                          font-size: 1.6rem;
+                          margin-top: -1rem;
+                        }
+
+                        .Stillthinking .btn-style:hover {
+                          border: 0.1rem solid var(--primary-color);
+                          background-color: transparent;
+                          color: var(--primary-color);
+                          box-shadow: 0 0.2rem 0.5rem rgba(183, 171, 255, 0.5);
+                        }
+
+
 /* --------------------------------- Footer  Section starts  
                         -------------------------------------------------------*/
 
@@ -405,13 +481,17 @@ footer h2 {
   color: #fff;
 }
 
+footer ul {
+  padding: 0rem;
+}
+
 footer li {
   list-style: none;
   font-size: 1.5rem;
   font-weight: lighter;
   color: #fff;
   cursor: pointer;
-  margin: 1rem 0;
+  margin: 1rem 0rem;
 }
 
 footer li:hover {
@@ -573,4 +653,172 @@ footer .main-hero-para {
   .container-xxl {
     max-width: 1400px;
   }
+}
+
+@media (max-width: 998px) {
+  .navbar .navbar-collapse {
+    margin-top: 1rem;
+    background-color: #fff;
+    padding: 2rem 1rem;
+  }
+
+  .input-group .btn-style{
+    font-size: 1.2rem;
+  }
+
+  .main-hero-container{
+    margin-top: 1rem;    
+  }
+
+  .main-hero-container h1 {
+    margin-top: 1rem;
+    font-size: 2.5rem;
+  }
+
+  .main-hero-para {
+    font-size: 1.5rem;    
+    width: 100%;
+  }
+
+  .main-hero-container .header-left-side {
+    padding-left: 4rem;
+    margin-top: 1rem;
+  }
+
+  .main-herosection-images {
+    position: relative;
+    height: 25rem;
+  }
+
+  .header-right-side img {
+    width: 90%;
+    height: 100%;
+    margin-top: 0rem;
+  }
+
+  .header-right-side .main-hero-img2{
+    position: absolute;
+    width: 40%;
+    height: 35%;
+    left: 50%;
+    top: -2%;
+    display: none;
+    box-shadow: 0.8px 0rem 0.8rem rgba(0 0 0 / 25%);
+  }
+
+  .main-hero-container .btn {
+    margin-top: -4rem; 
+  }
+
+
+  .work-container {
+    width: 80vw;
+    padding: 5rem 1rem;
+    margin-top: 2rem;
+  }
+
+  .work-container .main-heading {
+    font-size: 2.7rem;
+    font-weight: bolder;
+    margin-bottom: 3rem;
+    word-spacing: 0rem;
+  }
+
+  .work-container-subdiv {
+    padding: 0 0rem;    
+  }
+
+  .our-services {  
+    margin-top: 0rem;
+  }
+
+  .our-service-leftside-img {
+    margin: auto;
+  }
+
+  .our-service-leftside-img img {
+    margin: 2rem 0rem;
+  }
+
+  .our-service-rightside-img {
+    margin: auto;
+  }
+
+  .our-service-rightside-img img {
+    margin-top: 0rem;
+    margin-left: 3rem;
+  }
+
+  .our-services-list {
+    padding-left: 3rem;
+  }
+
+  .our-services img {
+    width: 82%;
+    height: 50%;
+  }
+
+  .service-container .work-container-subdiv {
+    padding: 0 2rem;
+    margin: 2rem auto;
+  }
+
+  .service-container .main-heading {
+    margin: 5rem auto 0 auto;
+    font-weight: bolder;
+  }
+
+  .our-services-rightside-content {
+    padding-left: 3rem;
+  }
+
+  .contactus-section {
+    margin: 5rem 0;
+  }
+
+  .contact-leftside img {
+    margin-left: 3rem;
+  }
+  
+
+  .contact-rightside {
+    margin-top: 5rem;
+  }
+
+  .contact-rightside form .main-hero-para {
+    font-size: 1.3rem;
+    color: var(--text-color);
+    margin: 0;
+    font-weight: lighter;
+    width: 98%;
+    padding: 0px 1rem;
+  }
+
+  footer {
+    padding: 2rem 3rem;
+    background-color: #182334;
+    color: #fff;
+  }
+
+  header {
+    padding-top: 80px;
+  }
+}
+
+.navbar .dropdown-item {
+  color: var(--main-text-color);
+  background-color: white;
+  margin: 3rem 0rem;
+}
+
+@media all and (min-width: 992px) {
+	.navbar .nav-item .dropdown-menu{ display: none; }
+	.navbar .nav-item:hover .nav-link{   }
+	.navbar .nav-item:hover .dropdown-menu{ display: block; }
+	.navbar .nav-item .dropdown-menu{ margin-top:0; }
+}	
+
+.img150{
+  width: 150px;
+  height: 150px;
 }
